@@ -1,4 +1,4 @@
-package bmartin127.advancedperipheralsremastered.common.utl;
+package bmartin127.advancedperipheralsremastered.common.utils;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;

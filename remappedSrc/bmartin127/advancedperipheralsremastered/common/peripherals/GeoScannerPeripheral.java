@@ -7,12 +7,10 @@ import dan200.computercraft.api.peripheral.IComputerAccess;
 import dan200.computercraft.api.peripheral.IPeripheral;
 import bmartin127.advancedperipheralsremastered.common.blocks.blockentities.GeoScannerBlockEntity;
 import dan200.computercraft.api.pocket.IPocketAccess;
-import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -40,18 +38,9 @@ public class GeoScannerPeripheral implements IPeripheral {
         this.pos = pocket.getEntity().getBlockPos();
     }
 
-    private static List<Map<String, ?>> scan(World level, BlockPos center, int radius)
+    private static List<Map<String, ?>> scan(Level level, BlockPos center, int radius)
     {
         List<Map<String, ?>> result = new ArrayList<>();
-        ScanUtils.relativeTraverseBlocks(level, center, radius, (state, pos) -> {
-            HashMap<String, Object> data = new HashMap<>(6);
-            // TODO finish implementation
-            //data.put("x", pos);
-
-            //Block block = state.;
-
-            result.add(data);
-        });
         return result;
     }
 
