@@ -1,0 +1,7 @@
+accessWidener v2 named
+
+# ItemUsageContext class
+accessible class net/minecraft/item/ItemUsageContext
+
+#Entity Lookup in ServerWorld
+accessible method net/minecraft/server/world/ServerWorld getEntityLookup ()I

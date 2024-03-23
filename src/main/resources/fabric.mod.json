@@ -16,7 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"bmartin127.advancedperipheralsremastered.Advancedperipherals"
+			"bmartin127.advancedperipheralsremastered.AdvancedPeripherals"
+		],
+		"client": [
+			"bmartin127.advancedperipheralsremastered.client.ClientRegistry"
 		]
 	},
 	"mixins": [
@@ -30,5 +33,6 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+	"accessWidener": "apr.accesswidener"
 }
